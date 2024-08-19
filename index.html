@@ -1,193 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
 
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
 
-      <!-- font awesome -->
-      <script src="https://kit.fontawesome.com/f913110033.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/f913110033.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="bg-orange-200">
-        <section  class="max-w-screen-xl mx-auto py-10 px-4  ">
-                <nav class="flex justify-between">
-                    <div class="lg:w-1/4 w-2/4 cursor-pointer">
-                        <img src="./icons/logo.png" alt="logo">
-                    </div>
-                    <div class="hidden lg:block">
-                        <ul class="flex gap-4 font-bold cursor-pointer ">
-                            <li class="hover:bg-orange-400 hover:p-2 rounded-lg hover:text-white">Home</li>
-                            <li class="hover:bg-orange-400 hover:p-2 rounded-lg hover:text-white">Product</li>
-                            <li class="hover:bg-orange-400 hover:p-2 rounded-lg hover:text-white">About Us</li>
-                            <li class="hover:bg-orange-400 hover:p-2 rounded-lg hover:text-white">Contact Us</li>
-                        </ul>
-                    </div>
-                    <div class="block lg:hidden   text-2xl cursor-pointer text-orange-400">
-                      <i class="fa-solid fa-bars"></i>
-                    </div>
-                </nav>
-                <div class="grid grid-cols-1 lg:grid-cols-2">
-                  <div class="py-40">
-                    <h2 class="uppercase font-extrabold text-7xl text-orange-400 mb-6">Be the penguins <br> <span class="text-black">of winter</span> </h2>
-                    <p class="text-slate-600">Lorem Ipsum is simply dummy text of the printing <br>
-                      and typesetting industry.</p>
-                      <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6"><img class="w-1/4" src="./icons/shopping-cart 1.png" alt=""><p class="mt-1 text-xl text-white">BUY NOW</p></button>
-                  </div>
-                  <div>
-                    <img src="./images/model.png" alt="">
-                  </div>
-                </div>
-
-        </section>
-
-
+      <section class="max-w-screen-xl mx-auto py-10 px-4">
+        <nav class="flex justify-between">
+          <div class="lg:w-1/4 w-2/4 cursor-pointer">
+            <img src="./icons/logo.png" alt="logo" />
+          </div>
+          <div class="hidden lg:block">
+            <ul class="flex gap-4 font-bold cursor-pointer">
+              <li
+                class="hover:bg-orange-400 hover:p-2 rounded-lg hover:text-white"
+              >
+                Home
+              </li>
+              <li
+                class="hover:bg-orange-400 hover:p-2 rounded-lg hover:text-white"
+              >
+                Product
+              </li>
+              <li
+                class="hover:bg-orange-400 hover:p-2 rounded-lg hover:text-white"
+              >
+                About Us
+              </li>
+              <li
+                class="hover:bg-orange-400 hover:p-2 rounded-lg hover:text-white"
+              >
+                Contact Us
+              </li>
+            </ul>
+          </div>
+          <div class="block lg:hidden text-2xl cursor-pointer text-orange-400">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <div class="py-40">
+            <h2 class="uppercase font-extrabold text-7xl text-orange-400 mb-6">
+              Be the penguins <br />
+              <span class="text-black">of winter</span>
+            </h2>
+            <p class="text-slate-600">
+              Lorem Ipsum is simply dummy text of the printing <br />
+              and typesetting industry.
+            </p>
+            <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6">
+              <img class="w-1/4" src="./icons/shopping-cart 1.png" alt="" />
+              <p class="mt-1 text-xl text-white">BUY NOW</p>
+            </button>
+          </div>
+          <div>
+            <img src="./images/model.png" alt="" />
+          </div>
+        </div>
+      </section>
     </header>
     <main class="max-w-screen-xl mx-auto py-10 px-4">
-    <!-- women card -->
-     <div>
-      <h2 class="font-extrabold text-6xl mb-8">Women Jacket</h2>
-     </div>
+      <!-- women card -->
+      <div>
+        <h2 class="font-extrabold text-6xl mb-8">Women Jacket</h2>
+      </div>
       <section class="grid grid-cols-1 lg:grid-cols-3 gap-3">
         <div class="bg-slate-300 p-6 rounded-lg relative">
           <div class="bg-slate-100 p-3 rounded-lg">
-            <img src="./images/jacket-1.png" alt="">
+            <img src="./images/jacket-1.png" alt="" />
           </div>
           <div class="mt-2">
             <h3 class="mb-2 text-2xl font-bold">Yellow Coat Jacket</h3>
-            <p class="text-slate-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, mollitia!</p>
+            <p class="text-slate-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Praesentium, mollitia!
+            </p>
           </div>
           <div class="flex justify-between">
             <h2 class="mt-8 font-bold text-white text-3xl">$234</h2>
-            <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6"><img class="w-1/4" src="./icons/shopping-cart 1.png" alt=""><p class="mt-1 text-xl text-white">BUY NOW</p></button>
-
+            <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6">
+              <img class="w-1/4" src="./icons/shopping-cart 1.png" alt="" />
+              <p class="mt-1 text-xl text-white">BUY NOW</p>
+            </button>
           </div>
           <div class="absolute top-0 right-0">
-            <button class="p-4 font-bold text-xl rounded-md bg-cyan-300 text-black">Stock</button>
+            <button
+              class="p-4 font-bold text-xl rounded-md bg-cyan-300 text-black"
+            >
+              Stock
+            </button>
           </div>
         </div>
         <div class="bg-slate-300 p-6 rounded-lg relative">
           <div class="bg-slate-100 p-3 rounded-lg">
-            <img src="./images/jacket-2.png" alt="">
+            <img src="./images/jacket-2.png" alt="" />
           </div>
           <div class="mt-2">
             <h3 class="mb-2 text-2xl font-bold">Ladies Jacket</h3>
-            <p class="text-slate-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, mollitia!</p>
+            <p class="text-slate-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Praesentium, mollitia!
+            </p>
           </div>
           <div class="flex justify-between">
             <h2 class="mt-8 font-bold text-white text-3xl">$234</h2>
-            <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6"><img class="w-1/4" src="./icons/shopping-cart 1.png" alt=""><p class="mt-1 text-xl text-white">BUY NOW</p></button>
-
+            <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6">
+              <img class="w-1/4" src="./icons/shopping-cart 1.png" alt="" />
+              <p class="mt-1 text-xl text-white">BUY NOW</p>
+            </button>
           </div>
           <div class="absolute top-0 right-0">
-            <button class="p-4 font-bold text-xl rounded-md bg-lime-700 text-lime-50">Stock Limited</button>
+            <button
+              class="p-4 font-bold text-xl rounded-md bg-lime-700 text-lime-50"
+            >
+              Stock Limited
+            </button>
           </div>
         </div>
         <div class="bg-slate-300 p-6 rounded-lg relative">
           <div class="bg-slate-100 p-3 rounded-lg">
-            <img src="./images/jacket-3.png" alt="">
+            <img src="./images/jacket-3.png" alt="" />
           </div>
           <div class="mt-2">
             <h3 class="mb-2 text-2xl font-bold">Women Leather Jacket</h3>
-            <p class="text-slate-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, mollitia!</p>
+            <p class="text-slate-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Praesentium, mollitia!
+            </p>
           </div>
           <div class="flex justify-between">
             <h2 class="mt-8 font-bold text-white text-3xl">$234</h2>
-            <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6"><img class="w-1/4" src="./icons/shopping-cart 1.png" alt=""><p class="mt-1 text-xl text-white">BUY NOW</p></button>
-
+            <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6">
+              <img class="w-1/4" src="./icons/shopping-cart 1.png" alt="" />
+              <p class="mt-1 text-xl text-white">BUY NOW</p>
+            </button>
           </div>
           <div class="absolute top-0 right-0">
-            <button class="p-4 font-bold text-xl rounded-md bg-red-600 text-red-50">Stock Out</button>
+            <button
+              class="p-4 font-bold text-xl rounded-md bg-red-600 text-red-50"
+            >
+              Stock Out
+            </button>
           </div>
         </div>
-         
-
       </section>
 
       <!-- Men Card -->
 
       <div>
         <h2 class="font-extrabold text-6xl mb-8 mt-10">Men Jacket</h2>
-       </div>
-        <section class="grid grid-cols-1 lg:grid-cols-3 gap-3">
-          <div class="bg-slate-300 p-6 rounded-lg relative">
-            <div class="bg-slate-100 p-3 rounded-lg">
-              <img src="./images/jacket-4.png" alt="">
-            </div>
-            <div class="mt-2">
-              <h3 class="mb-2 text-2xl font-bold">Snowboard Jacket Mens</h3>
-              <p class="text-slate-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, mollitia!</p>
-            </div>
-            <div class="flex justify-between">
-              <h2 class="mt-8 font-bold text-white text-3xl">$234</h2>
-              <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6"><img class="w-1/4" src="./icons/shopping-cart 1.png" alt=""><p class="mt-1 text-xl text-white">BUY NOW</p></button>
-  
-            </div>
-            <div class="absolute top-0 right-0">
-              <button class="p-4 font-bold text-xl rounded-md bg-lime-700 text-lime-50">Stock Limited</button>
-            </div>
-            
+      </div>
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+        <div class="bg-slate-300 p-6 rounded-lg relative">
+          <div class="bg-slate-100 p-3 rounded-lg">
+            <img src="./images/jacket-4.png" alt="" />
           </div>
-          <div class="bg-slate-300 p-6 rounded-lg relative">
-            <div class="bg-slate-100 p-3 rounded-lg">
-              <img src="./images/jacket-5.png" alt="">
-            </div>
-            <div class="mt-2">
-              <h3 class="mb-2 text-2xl font-bold">Man Leather Jackets</h3>
-              <p class="text-slate-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, mollitia!</p>
-            </div>
-            <div class="flex justify-between">
-              <h2 class="mt-8 font-bold text-white text-3xl">$234</h2>
-              <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6"><img class="w-1/4" src="./icons/shopping-cart 1.png" alt=""><p class="mt-1 text-xl text-white">BUY NOW</p></button>
-  
-            </div>
-          
-            <div class="absolute top-0 right-0">
-              <button class="p-4 font-bold text-xl rounded-md bg-red-600 text-red-50">Stock Out</button>
-            </div>
+          <div class="mt-2">
+            <h3 class="mb-2 text-2xl font-bold">Snowboard Jacket Mens</h3>
+            <p class="text-slate-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Praesentium, mollitia!
+            </p>
           </div>
-          <div class="bg-slate-300 p-6 rounded-lg relative">
-            <div class="bg-slate-100 p-3 rounded-lg">
-              <img src="./images/jacket-6.png" alt="">
-            </div>
-            <div class="mt-2">
-              <h3 class="mb-2 text-2xl font-bold">Man Casual Jackets</h3>
-              <p class="text-slate-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, mollitia!</p>
-            </div>
-            <div class="flex justify-between">
-              <h2 class="mt-8 font-bold text-white text-3xl">$234</h2>
-              <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6"><img class="w-1/4" src="./icons/shopping-cart 1.png" alt=""><p class="mt-1 text-xl text-white">BUY NOW</p></button>
-  
-            </div>
-            <div class="absolute top-0 right-0">
-              <button class="p-4 font-bold text-xl rounded-md bg-cyan-300 text-black">Stock</button>
-            </div>
-           
+          <div class="flex justify-between">
+            <h2 class="mt-8 font-bold text-white text-3xl">$234</h2>
+            <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6">
+              <img class="w-1/4" src="./icons/shopping-cart 1.png" alt="" />
+              <p class="mt-1 text-xl text-white">BUY NOW</p>
+            </button>
           </div>
-           
-  
-        </section>
+          <div class="absolute top-0 right-0">
+            <button
+              class="p-4 font-bold text-xl rounded-md bg-lime-700 text-lime-50"
+            >
+              Stock Limited
+            </button>
+          </div>
+        </div>
+        <div class="bg-slate-300 p-6 rounded-lg relative">
+          <div class="bg-slate-100 p-3 rounded-lg">
+            <img src="./images/jacket-5.png" alt="" />
+          </div>
+          <div class="mt-2">
+            <h3 class="mb-2 text-2xl font-bold">Man Leather Jackets</h3>
+            <p class="text-slate-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Praesentium, mollitia!
+            </p>
+          </div>
+          <div class="flex justify-between">
+            <h2 class="mt-8 font-bold text-white text-3xl">$234</h2>
+            <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6">
+              <img class="w-1/4" src="./icons/shopping-cart 1.png" alt="" />
+              <p class="mt-1 text-xl text-white">BUY NOW</p>
+            </button>
+          </div>
 
+          <div class="absolute top-0 right-0">
+            <button
+              class="p-4 font-bold text-xl rounded-md bg-red-600 text-red-50"
+            >
+              Stock Out
+            </button>
+          </div>
+        </div>
+        <div class="bg-slate-300 p-6 rounded-lg relative">
+          <div class="bg-slate-100 p-3 rounded-lg">
+            <img src="./images/jacket-6.png" alt="" />
+          </div>
+          <div class="mt-2">
+            <h3 class="mb-2 text-2xl font-bold">Man Casual Jackets</h3>
+            <p class="text-slate-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Praesentium, mollitia!
+            </p>
+          </div>
+          <div class="flex justify-between">
+            <h2 class="mt-8 font-bold text-white text-3xl">$234</h2>
+            <button class="flex bg-green-400 gap-2 p-2 rounded-xl mt-6">
+              <img class="w-1/4" src="./icons/shopping-cart 1.png" alt="" />
+              <p class="mt-1 text-xl text-white">BUY NOW</p>
+            </button>
+          </div>
+          <div class="absolute top-0 right-0">
+            <button
+              class="p-4 font-bold text-xl rounded-md bg-cyan-300 text-black"
+            >
+              Stock
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 gap-4 lg:grid-cols-2 mt-8 lg:h-[200]">
+        <div class="grid grid-rows-3 gap-4">
+          <div class="flex mt-8 gap-4 shadow-2xl rounded-lg">
+            <div>
+              <img class=" " src="./icons/question.png" alt="" />
+            </div>
+            <div class="py-8 lg:py-16">
+              <h3 class="font-bold text-3xl mb-2">Find the Perfect Fit</h3>
+              <p>
+                Everybody is different, which is why we <br />
+                offer styles for every body.
+              </p>
+            </div>
+          </div>
+          <div class="flex mt-8 shadow-2xl rounded-lg">
+            <div>
+              <img class=" " src="./icons/house.png" alt="" />
+            </div>
+            <div class="py-8 lg:py-16">
+              <h3 class="font-bold text-3xl mb-2">Find the Perfect Fit</h3>
+              <p>
+                Everybody is different, which is why we <br />
+                offer styles for every body.
+              </p>
+            </div>
+          </div>
+          <div class="flex mt-8 shadow-2xl rounded-lg">
+            <div>
+              <img class=" " src="./icons/box.png" alt="" />
+            </div>
+            <div class="py-8 lg:py-16">
+              <h3 class="font-bold text-3xl mb-2">Find the Perfect Fit</h3>
+              <p>
+                Everybody is different, which is why we <br />
+                offer styles for every body.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img class="lg:h-4/5 mt-8" src="./images/shopping.png" alt="" />
+        </div>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>
